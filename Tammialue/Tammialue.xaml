@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="Tammialue.Tammialue"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" 
+             xmlns:my="clr-namespace:Pelinappula;assembly=Pelinappula" 
+             xmlns:my1="clr-namespace:Laatta;assembly=Laatta"
+             xmlns:oma="clr-namespace:Tammialue;assembly=Tammialue"
+             Height="240" Width="240">
+    <Grid Name="gridi" Background="Black" Loaded="gridi_Loaded" my:Pelinappula.NappulaArgs="gridi_NappulaArgs" my1:Laatta.LaattaArgs="gridi_LaattaArgs">
+        <MediaElement Name="audio" Source="http://users.jyu.fi/~helireki/gko14/voitto.mp3" LoadedBehavior="Manual" />
+    </Grid>
+</UserControl>

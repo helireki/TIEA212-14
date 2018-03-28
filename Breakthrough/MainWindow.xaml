@@ -1,0 +1,37 @@
+﻿<Window x:Class="Breakthrough.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Breakthrough ja Tammi" Height="628" Width="525" 
+        xmlns:my="clr-namespace:Pelialue;assembly=Pelialue" 
+        xmlns:my1="clr-namespace:Pelinappula;assembly=Pelinappula"
+        MinHeight="370" MinWidth="270"
+        Name="ikkuna" xmlns:oma="clr-namespace:Tammialue;assembly=Tammialue">
+    <StackPanel Name="paneeli" Loaded="paneeli_Loaded">
+        <Menu Name="menu">
+            <MenuItem Header="_File">
+                <MenuItem Header="Aloita _uusi peli" Click="Aloita_Click"/>
+                <MenuItem Header="_Tallenna pelitulos" Click="Tallenna_Click"/>
+                <MenuItem Header="Tulosta _pelitulos" Click="Tulosta_Click"/>
+                <MenuItem Header="_Asetukset" Click="Asetukset_Click"/>
+                <MenuItem Header="_Sulje" Click="Sulje_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="_About" Click="About_Click"/>
+                <MenuItem Header="_Ohjeet" Click="Ohjeet_Click"/>
+            </MenuItem>
+        </Menu>
+        <StackPanel Orientation="Vertical" Name="pelipaneeli">
+            <StackPanel Orientation="Horizontal">
+                <Label Name="labelP1" Content="Ylhäällä oleva pelaaja: "/>
+                <TextBox Height="23" Name="textBox1" Width="120" Text="YläPelaaja"/>
+            </StackPanel>
+        </StackPanel>
+        <Viewbox Name="boxi" Stretch="Uniform" StretchDirection="Both">
+        <!-- tähän tulee pelialue -->
+        </Viewbox>
+        <StackPanel Orientation="Horizontal">
+            <Label Name="labelP2" Content="Alhaalla oleva pelaaja: "/>
+            <TextBox Height="23" Name="textBox2" Width="120" Text="AlaPelaaja"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,11 @@
+﻿<Window x:Class="About.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="178" Width="270">
+    <StackPanel>
+        <Label Content="Breakthrough ja Tammi" Height="35" Name="label1"  HorizontalContentAlignment="Center" FontSize="15" FontWeight="DemiBold"/>
+        <Label Content="Tekijä: Heta Rekilä" Height="28" Name="label2"  HorizontalContentAlignment="Center"/>
+        <Label Content="4.0  15.12.2014" Height="28" Name="label3"  HorizontalContentAlignment="Center"/>
+        <Button Name="buttonOK" Content="_Ok" Width="73" Click="buttonOK_Click" />
+    </StackPanel>
+</Window>
